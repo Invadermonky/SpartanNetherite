@@ -1,0 +1,27 @@
+{
+  "group": "spartannetherite",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i",
+	"h"
+  ],
+  "key": {
+    "i": {
+      "type": "forge:ore_dict",
+	  "ore": "ingotNetherite"
+    },
+    "h": {
+      "item": "spartanweaponry:material",
+	  "data": 0
+    }
+  },
+  "result": {
+    "item": "spartannetherite:dagger_netherite"
+  },
+  "conditions": [
+	{
+      "type": "item_exists",
+      "item": "spartannetherite:dagger_netherite"
+    }
+  ]
+}

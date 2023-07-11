@@ -1,0 +1,14 @@
+# Localization file for Spartan Netherrite version 1.0.0
+
+# Materials
+material.spartannetherite:netherite=Netherite
+material.spartannetherite:ingotNetherite=Netherite Ingot
+
+# Items
+item.spartannetherite:shield_basic_netherite.name=Netherite Plated Shield
+item.spartannetherite:shield_tower_netherite.name=Netherite Tower Shield
+
+# Tooltips
+tooltip.spartannetherite:materialbonus=Material Bonus
+tooltip.spartannetherite:fireproof=Fireproof
+tooltip.spartannetherite:fireproof.desc=Will not be destroyed when dropped in fire or lava

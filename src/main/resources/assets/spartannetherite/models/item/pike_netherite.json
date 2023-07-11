@@ -1,0 +1,6 @@
+{
+  "parent": "spartanweaponry:item/pike_wood",
+  "textures": {
+    "layer0": "spartannetherite:items/pike_netherite"
+  }
+}

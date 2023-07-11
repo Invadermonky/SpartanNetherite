@@ -1,0 +1,6 @@
+{
+  "parent": "spartanweaponry:item/katana_wood",
+  "textures": {
+    "layer0": "spartannetherite:items/katana_netherite"
+  }
+}

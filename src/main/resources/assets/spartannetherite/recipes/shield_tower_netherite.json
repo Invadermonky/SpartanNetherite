@@ -1,0 +1,27 @@
+{
+  "group": "spartannetherite",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    "isi",
+    " i "
+  ],
+  "key": {
+    "i": {
+      "type": "forge:ore_dict",
+      "ore": "ingotNetherite"
+    },
+    "s": {
+      "item": "spartanshields:shield_tower_wood"
+    }
+  },
+  "result": {
+    "item": "spartannetherite:shield_tower_netherite"
+  },
+  "conditions": [
+    {
+      "type": "item_exists",
+      "item": "spartannetherite:shield_tower_netherite"
+    }
+  ]
+}

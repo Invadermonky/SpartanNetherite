@@ -1,0 +1,6 @@
+{
+  "parent": "spartanweaponry:item/crossbow_wood_pulling_0",
+  "textures": {
+    "layer0": "spartannetherite:items/crossbow_netherite_pulling_1"
+  }
+}

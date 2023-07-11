@@ -1,0 +1,32 @@
+{
+  "group": "spartannetherite",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i",
+    "p",
+    "h"
+  ],
+  "key": {
+    "i": {
+      "type": "forge:ore_dict",
+      "ore": "ingotNetherite"
+    },
+    "p": {
+      "item": "spartanweaponry:material",
+      "data": 1
+    },
+    "h": {
+      "item": "spartanweaponry:material",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "spartannetherite:lance_netherite"
+  },
+  "conditions": [
+    {
+      "type": "item_exists",
+      "item": "spartannetherite:lance_netherite"
+    }
+  ]
+}

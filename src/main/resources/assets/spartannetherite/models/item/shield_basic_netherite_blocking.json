@@ -1,0 +1,6 @@
+{
+  "parent":"spartanshields:item/shield_basic_base_blocking",
+  "textures": {
+    "layer0":"spartannetherite:items/shield_basic_netherite"
+  }
+}

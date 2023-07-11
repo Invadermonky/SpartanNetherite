@@ -1,0 +1,6 @@
+{
+  "parent": "spartanweaponry:item/staff",
+  "textures": {
+    "layer0": "spartannetherite:items/staff_netherite"
+  }
+}

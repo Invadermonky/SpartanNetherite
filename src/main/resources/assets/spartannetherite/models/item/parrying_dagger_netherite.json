@@ -1,0 +1,14 @@
+{
+  "parent":"spartanweaponry:item/parrying_dagger_wood",
+  "textures": {
+    "layer0":"spartannetherite:items/parrying_dagger_netherite"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "spartannetherite:item/parrying_dagger_netherite_blocking"
+    }
+  ]
+}

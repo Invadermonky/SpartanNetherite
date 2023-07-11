@@ -1,0 +1,28 @@
+{
+  "group": "spartannetherite",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i",
+    " i",
+    "ih"
+  ],
+  "key": {
+    "i": {
+      "type": "forge:ore_dict",
+      "ore": "ingotNetherite"
+    },
+    "h": {
+      "item": "spartanweaponry:material",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "spartannetherite:saber_netherite"
+  },
+  "conditions": [
+    {
+      "type": "item_exists",
+      "item": "spartannetherite:saber_netherite"
+    }
+  ]
+}

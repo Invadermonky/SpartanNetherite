@@ -1,0 +1,14 @@
+{
+  "parent":"spartanshields:item/shield_basic_base",
+  "textures": {
+    "layer0":"spartannetherite:items/shield_basic_netherite"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "spartannetherite:item/shield_basic_netherite_blocking"
+    }
+  ]
+}

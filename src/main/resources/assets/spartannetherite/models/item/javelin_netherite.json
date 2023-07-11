@@ -1,0 +1,6 @@
+{
+  "parent": "spartanweaponry:item/javelin_wood",
+  "textures": {
+    "layer0": "spartannetherite:items/javelin_netherite"
+  }
+}
