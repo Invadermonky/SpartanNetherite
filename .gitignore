@@ -19,4 +19,8 @@ build
 
 # other
 eclipse
+oldclasses
 run
+sprites
+/gradlew.bat
+/gradlew
