@@ -20,7 +20,7 @@ public class SpartanNetherite {
 
     public static final String MOD_ID = "spartannetherite";
     public static final String MOD_NAME = "Spartan Netherite";
-    public static final String MOD_VERSION = "1.0.0";
+    public static final String MOD_VERSION = "1.12.2-1.0.1";
     public static final String DEPENDENCIES = "required-after:spartanweaponry@[1.4.0,);required-after:futuremc;after:spartanshields;after:baubles";
     public static final String MC_VERSION = "[1.12.2]";
 

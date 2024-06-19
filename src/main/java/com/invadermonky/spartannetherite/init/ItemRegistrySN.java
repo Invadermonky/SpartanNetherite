@@ -45,6 +45,7 @@ public class ItemRegistrySN {
         }
         if(!ConfigHandler.disableLongsword) {
             longswordNetherite = new ItemLongswordSN("longsword_netherite", materialNetherite);
+            addWeaponsToRegister(longswordNetherite);
         }
         if(!ConfigHandler.disableKatana) {
             katanaNetherite = new ItemKatanaSN("katana_netherite", materialNetherite);
