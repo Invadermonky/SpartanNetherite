@@ -22,6 +22,7 @@ static weapons as string[] = [
     "katana",
     "lance",
     "longbow",
+    "longsword",
     "mace",
     "parrying_dagger",
     "pike",
