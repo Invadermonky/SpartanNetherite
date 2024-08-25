@@ -104,8 +104,8 @@ dependencies {
     }
 
     // Example of deobfuscating a dependency
-    // implementation rfg.deobf('curse.maven:had-enough-items-557549:4543375')
-    implementation rfg.deobf("curse.maven:spartan-weaponry-278141:3571769")
+    implementation rfg.deobf('curse.maven:had-enough-items-557549:4543375')
+    implementation rfg.deobf("curse.maven:spartan-weaponry-278141:5564836")
     implementation rfg.deobf("curse.maven:future-mc-310059:3842790")
     implementation rfg.deobf("curse.maven:spartan-shields-252239:3567495")
 

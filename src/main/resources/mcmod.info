@@ -5,7 +5,7 @@
     "description": "Adds Spartan Weaponry weapons using Future MC's Netherite.",
     "version": "${mcversion}-${version}",
     "mcversion": "${mcversion}",
-    "url": "",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/spartan-netherite",
     "updateUrl": "",
     "authorList": ["Invadermonky"],
     "credits": " - ObliviousSpartan for his amazing weaponry mod.

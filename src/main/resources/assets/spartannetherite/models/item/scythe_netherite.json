@@ -1,0 +1,6 @@
+{
+  "parent": "spartanweaponry:item/scythe_wood",
+  "textures": {
+    "layer0": "spartannetherite:items/scythe_netherite"
+  }
+}

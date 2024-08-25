@@ -24,7 +24,7 @@ import java.util.ArrayList;
 public class ItemRegistrySN {
     public static ToolMaterialEx materialNetherite;
 
-    public static Item daggerNetherite, longswordNetherite, katanaNetherite, saberNetherite, rapierNetherite, greatswordNetherite,
+    public static Item daggerNetherite, longswordNetherite, katanaNetherite, scytheNetherite, saberNetherite, rapierNetherite, greatswordNetherite,
             hammerNetherite, warhammerNetherite, spearNetherite, halberdNetherite, pikeNetherite, lanceNetherite, longbowNetherite,
             crossbowNetherite, throwingKnifeNetherite, throwingAxeNetherite, javelinNetherite, boomerangNetherite, battleaxeNetherite,
             maceNetherite, glaiveNetherite, staffNetherite, parryNetherite;
@@ -50,6 +50,10 @@ public class ItemRegistrySN {
         if(!ConfigHandler.disableKatana) {
             katanaNetherite = new ItemKatanaSN("katana_netherite", materialNetherite);
             addWeaponsToRegister(katanaNetherite);
+        }
+        if(!ConfigHandler.disableScythe) {
+            scytheNetherite = new ItemScytheSN("scythe_netherite", materialNetherite);
+            addWeaponsToRegister(scytheNetherite);
         }
         if(!ConfigHandler.disableSaber) {
             saberNetherite = new ItemSaberSN("saber_netherite", materialNetherite);
