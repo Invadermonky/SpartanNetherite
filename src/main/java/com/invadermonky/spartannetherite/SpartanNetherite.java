@@ -2,7 +2,7 @@ package com.invadermonky.spartannetherite;
 
 import com.invadermonky.spartannetherite.proxy.CommonProxy;
 import com.invadermonky.spartannetherite.util.LogHelper;
-import com.invadermonky.spartannetherite.util.ModHelper;
+import com.invadermonky.spartannetherite.util.libs.ModIds;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -20,16 +20,18 @@ public class SpartanNetherite {
 
     public static final String MOD_ID = "spartannetherite";
     public static final String MOD_NAME = "Spartan Netherite";
-    public static final String MOD_VERSION = "1.12.2-1.1.0";
-    public static final String DEPENDENCIES =
-            "required-after:spartanweaponry@[1.6.0,)" +
-            ";required-after:futuremc" +
-            ";after:spartanshields" +
-            ";after:baubles";
+    public static final String MOD_VERSION = "1.12.2-1.2.0";
     public static final String MC_VERSION = "[1.12.2]";
+    public static final String DEPENDENCIES =
+            "required-after:"+ ModIds.ConstIds.spartan_weaponry + "@["+ ModIds.ConstVersions.spartan_weaponry + ",)" +
+                    ";required-after:futurefireproof" +
+                    ";after:" + ModIds.ConstIds.futuremc +
+                    ";after:" + ModIds.ConstIds.jei +
+                    ";after:" + ModIds.ConstIds.nether_backport +
+                    ";after:" + ModIds.ConstIds.spartan_shields;
 
-    public static final String ProxyClientClass = "com.invadermonky.spartannetherite.proxy.ClientProxy";
-    public static final String ProxyServerClass = "com.invadermonky.spartannetherite.proxy.CommonProxy";
+    public static final String ProxyClientClass = "com.invadermonky."+ MOD_ID + ".proxy.ClientProxy";
+    public static final String ProxyServerClass = "com.invadermonky."+ MOD_ID + ".proxy.CommonProxy";
 
     @Mod.Instance(MOD_ID)
     public static SpartanNetherite INSTANCE;
@@ -40,7 +42,6 @@ public class SpartanNetherite {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         LogHelper.info("Starting Spartan Netherite.");
-        ModHelper.preInit();
         proxy.preInit(event);
         LogHelper.debug("Finished preInit phase.");
     }

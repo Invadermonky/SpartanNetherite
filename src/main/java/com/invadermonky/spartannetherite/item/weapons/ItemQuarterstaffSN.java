@@ -1,21 +1,15 @@
 package com.invadermonky.spartannetherite.item.weapons;
 
+import com.invadermonky.futurefireproof.api.IFireproofItem;
 import com.invadermonky.spartannetherite.SpartanNetherite;
-import com.oblivioussp.spartanweaponry.api.ToolMaterialEx;
+import com.invadermonky.spartannetherite.item.materials.ToolMaterialsSN;
+import com.invadermonky.spartannetherite.util.libs.LibNames;
 import com.oblivioussp.spartanweaponry.client.gui.CreativeTabsSW;
 import com.oblivioussp.spartanweaponry.item.ItemQuarterstaff;
-import net.minecraft.entity.FireproofItemLogic;
-import net.minecraft.entity.item.EntityItem;
 
-public class ItemQuarterstaffSN extends ItemQuarterstaff {
-    public ItemQuarterstaffSN(String unlocName, ToolMaterialEx material) {
-        super(unlocName, SpartanNetherite.MOD_ID, material);
+public class ItemQuarterstaffSN extends ItemQuarterstaff implements IFireproofItem {
+    public ItemQuarterstaffSN() {
+        super(LibNames.staff_netherite, SpartanNetherite.MOD_ID, ToolMaterialsSN.materialex_netherite);
         this.setCreativeTab(CreativeTabsSW.TAB_SW_MOD);
-    }
-
-    @Override
-    public boolean onEntityItemUpdate(EntityItem entityItem) {
-        FireproofItemLogic.INSTANCE.update(entityItem);
-        return true;
     }
 }

@@ -1,4 +1,4 @@
-package com.invadermonky.spartannetherite.render.item;
+package com.invadermonky.spartannetherite.client.render.item;
 
 import com.invadermonky.spartannetherite.SpartanNetherite;
 import net.minecraft.client.Minecraft;

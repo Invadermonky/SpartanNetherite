@@ -1,4 +1,4 @@
-package com.invadermonky.spartannetherite.model;
+package com.invadermonky.spartannetherite.client.model;
 
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.client.model.ModelShield;

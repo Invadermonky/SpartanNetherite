@@ -2,17 +2,15 @@
   {
     "modid": "spartannetherite",
     "name": "Spartan Netherite",
-    "description": "Adds Spartan Weaponry weapons using Future MC's Netherite.",
+    "description": "Adds Netherite Spartan Weaponry weapons and shields.",
     "version": "${mcversion}-${version}",
     "mcversion": "${mcversion}",
     "url": "https://www.curseforge.com/minecraft/mc-mods/spartan-netherite",
     "updateUrl": "",
     "authorList": ["Invadermonky"],
-    "credits": " - ObliviousSpartan for his amazing weaponry mod.
-            - thedarkcolor for permission to use his fireproof item logic.
-            - The_Computerizer from the 1.12 Modding Discord for his help with several code issues",
+    "credits": "ObliviousSpartan for his amazing weaponry mod.",
     "logoFile": "assets/spartannetherite/textures/logo.png",
     "screenshots": [],
-    "dependencies": ["Spartan Weaponry", "Future MC"]
+    "dependencies": ["Spartan Weaponry", "Future Fireproof"]
 }
 ]
