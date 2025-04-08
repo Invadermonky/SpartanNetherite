@@ -10,19 +10,21 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import thedarkcolour.futuremc.config.FConfig;
 
 public class CommonProxy {
-    public void preInit(FMLPreInitializationEvent event) {
-        if(loadAnvilRecipes()) {
-            MinecraftForge.EVENT_BUS.register(new AnvilEventHandler());
-        }
-    }
-    public void init(FMLInitializationEvent event) {}
-    public void postInit(FMLPostInitializationEvent event) {}
-
     public static boolean loadAnvilRecipes() {
-        if(ModIds.futuremc.isLoaded) {
+        if (ModIds.futuremc.isLoaded) {
             return !FConfig.INSTANCE.getVillageAndPillage().smithingTable.enabled || ConfigHandlerSN.forceLoadAnvilRecipes;
         } else {
             return ConfigHandlerSN.anvilRecipes;
         }
     }
+
+    public void preInit(FMLPreInitializationEvent event) {
+        if (loadAnvilRecipes()) {
+            MinecraftForge.EVENT_BUS.register(new AnvilEventHandler());
+        }
+    }
+
+    public void init(FMLInitializationEvent event) {}
+
+    public void postInit(FMLPostInitializationEvent event) {}
 }

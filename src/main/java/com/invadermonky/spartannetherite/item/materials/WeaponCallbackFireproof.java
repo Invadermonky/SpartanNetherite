@@ -18,7 +18,7 @@ public class WeaponCallbackFireproof implements IWeaponCallback {
     public void onTooltip(ToolMaterialEx material, ItemStack stack, World world, List<String> tooltip, ITooltipFlag flag) {
         tooltip.add(TextFormatting.AQUA + StringHelper.translateString("materialbonus", "tooltip", SpartanNetherite.MOD_ID) + ":");
         tooltip.add(TextFormatting.GREEN + "- " + StringHelper.translateString(LibNames.fireproof, "tooltip", SpartanNetherite.MOD_ID));
-        if(GuiScreen.isShiftKeyDown()) {
+        if (GuiScreen.isShiftKeyDown()) {
             tooltip.add(TextFormatting.ITALIC + " " + StringHelper.translateString(LibNames.fireproof + ".desc", "tooltip", SpartanNetherite.MOD_ID));
         }
     }

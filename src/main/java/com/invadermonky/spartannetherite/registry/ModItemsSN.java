@@ -21,30 +21,30 @@ import java.util.ArrayList;
 
 @Mod.EventBusSubscriber(modid = SpartanNetherite.MOD_ID)
 public class ModItemsSN {
-	public static Item dagger_netherite;
-	public static Item longsword_netherite;
-	public static Item katana_netherite;
-	public static Item scythe_netherite;
-	public static Item saber_netherite;
-	public static Item rapier_netherite;
-	public static Item greatsword_netherite;
-	public static Item hammer_netherite;
-	public static Item warhammer_netherite;
-	public static Item spear_netherite;
-	public static Item halberd_netherite;
-	public static Item pike_netherite;
-	public static Item lance_netherite;
-	public static Item longbow_netherite;
-	public static Item crossbow_netherite;
-	public static Item throwing_knife_netherite;
-	public static Item throwing_axe_netherite;
-	public static Item javelin_netherite;
-	public static Item boomerang_netherite;
-	public static Item battleaxe_netherite;
-	public static Item mace_netherite;
-	public static Item glaive_netherite;
-	public static Item staff_netherite;
-	public static Item parry_netherite;
+    public static Item dagger_netherite;
+    public static Item longsword_netherite;
+    public static Item katana_netherite;
+    public static Item scythe_netherite;
+    public static Item saber_netherite;
+    public static Item rapier_netherite;
+    public static Item greatsword_netherite;
+    public static Item hammer_netherite;
+    public static Item warhammer_netherite;
+    public static Item spear_netherite;
+    public static Item halberd_netherite;
+    public static Item pike_netherite;
+    public static Item lance_netherite;
+    public static Item longbow_netherite;
+    public static Item crossbow_netherite;
+    public static Item throwing_knife_netherite;
+    public static Item throwing_axe_netherite;
+    public static Item javelin_netherite;
+    public static Item boomerang_netherite;
+    public static Item battleaxe_netherite;
+    public static Item mace_netherite;
+    public static Item glaive_netherite;
+    public static Item staff_netherite;
+    public static Item parry_netherite;
 
     public static ItemShield shield_netherite;
     public static ItemShield shield_tower_netherite;
@@ -52,14 +52,14 @@ public class ModItemsSN {
     public static ArrayList<Item> weapons = new ArrayList<>();
 
     public static void addItemToRegister(Item item, boolean enabled) {
-        if(item != null && enabled) {
+        if (item != null && enabled) {
             weapons.add(item);
         }
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        for(Item weapon : weapons) {
+        for (Item weapon : weapons) {
             event.getRegistry().register(weapon);
             SpartanWeaponryAPI.addItemModelToRegistry(weapon);
         }
@@ -67,14 +67,14 @@ public class ModItemsSN {
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
-        if(ModIds.spartan_shields.isLoaded) {
+        if (ModIds.spartan_shields.isLoaded) {
             registerItemRender(ModItemsSN.shield_netherite);
             registerItemRender(ModItemsSN.shield_tower_netherite);
         }
     }
 
     private static void registerItemRender(Item item) {
-        if(item != null) {
+        if (item != null) {
             ModelResourceLocation modelLoc = new ModelResourceLocation(StringHelper.stripUnlocalizedName(item.getTranslationKey()), "inventory");
             ModelLoader.setCustomModelResourceLocation(item, 0, modelLoc);
         }
@@ -107,9 +107,9 @@ public class ModItemsSN {
         addItemToRegister(staff_netherite = new ItemQuarterstaffSN(), !ConfigHandler.disableQuarterstaff);
 
 
-        if(ModIds.spartan_shields.isLoaded) {
-            addItemToRegister(shield_netherite = new ItemShieldSN(LibNames.shield_netherite).create(), !com.oblivioussp.spartanshields.util.ConfigHandler.disableStandardShields);
-            addItemToRegister(shield_tower_netherite = new ItemShieldSN(LibNames.shield_tower_netherite).create(), !com.oblivioussp.spartanshields.util.ConfigHandler.disableTowerShields);
+        if (ModIds.spartan_shields.isLoaded) {
+            addItemToRegister(shield_netherite = ItemShieldSN.getInstance().create(LibNames.shield_netherite), !com.oblivioussp.spartanshields.util.ConfigHandler.disableStandardShields);
+            addItemToRegister(shield_tower_netherite = ItemShieldSN.getInstance().create(LibNames.shield_tower_netherite), !com.oblivioussp.spartanshields.util.ConfigHandler.disableTowerShields);
         }
     }
 }

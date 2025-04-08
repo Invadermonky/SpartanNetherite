@@ -9,16 +9,16 @@ import net.minecraft.item.ItemShield;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
 public class ClientProxy extends CommonProxy {
-    @Override
-    public void init(FMLInitializationEvent event) {
-        setShieldTEISR(ModItemsSN.shield_tower_netherite, LibNames.shield_tower_netherite, "S_NETHERITE", new ModelShieldTowerSN());
-    }
-
     private static void setShieldTEISR(ItemShield shield, String textureName, String bannerID, ModelShield model) {
-        if(shield == null){
+        if (shield == null) {
             return;
         }
         shield.setTileEntityItemStackRenderer(new TileEntityItemStackRendererSN(shield, String.format("textures/entity/%s_nopattern.png", textureName),
-                String.format("textures/entity/%s_pattern.png",  textureName), bannerID, model));
+                String.format("textures/entity/%s_pattern.png", textureName), bannerID, model));
+    }
+
+    @Override
+    public void init(FMLInitializationEvent event) {
+        setShieldTEISR(ModItemsSN.shield_tower_netherite, LibNames.shield_tower_netherite, "S_NETHERITE", new ModelShieldTowerSN());
     }
 }

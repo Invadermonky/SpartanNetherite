@@ -17,7 +17,7 @@ public class WeaponPropertyFireproof extends WeaponPropertyWithCallback {
 
     @Override
     protected void addTooltipDescription(ItemStack stack, List<String> tooltip) {
-        if(GuiScreen.isShiftKeyDown()) {
+        if (GuiScreen.isShiftKeyDown()) {
             tooltip.add(TextFormatting.ITALIC + " " + StringHelper.translateString(LibNames.fireproof + ".desc", "tooltip", SpartanNetherite.MOD_ID));
         }
     }

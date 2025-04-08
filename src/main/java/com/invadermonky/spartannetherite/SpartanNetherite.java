@@ -20,18 +20,18 @@ public class SpartanNetherite {
 
     public static final String MOD_ID = "spartannetherite";
     public static final String MOD_NAME = "Spartan Netherite";
-    public static final String MOD_VERSION = "1.12.2-1.2.0";
+    public static final String MOD_VERSION = "1.2.1";
     public static final String MC_VERSION = "[1.12.2]";
     public static final String DEPENDENCIES =
-            "required-after:"+ ModIds.ConstIds.spartan_weaponry + "@["+ ModIds.ConstVersions.spartan_weaponry + ",)" +
+            "required-after:" + ModIds.ConstIds.spartan_weaponry + "@[" + ModIds.ConstVersions.spartan_weaponry + ",)" +
                     ";required-after:futurefireproof" +
                     ";after:" + ModIds.ConstIds.futuremc +
                     ";after:" + ModIds.ConstIds.jei +
                     ";after:" + ModIds.ConstIds.nether_backport +
                     ";after:" + ModIds.ConstIds.spartan_shields;
 
-    public static final String ProxyClientClass = "com.invadermonky."+ MOD_ID + ".proxy.ClientProxy";
-    public static final String ProxyServerClass = "com.invadermonky."+ MOD_ID + ".proxy.CommonProxy";
+    public static final String ProxyClientClass = "com.invadermonky." + MOD_ID + ".proxy.ClientProxy";
+    public static final String ProxyServerClass = "com.invadermonky." + MOD_ID + ".proxy.CommonProxy";
 
     @Mod.Instance(MOD_ID)
     public static SpartanNetherite INSTANCE;

@@ -22,9 +22,9 @@ public class StringHelper {
 
     public static String translateString(String unlocalizedStr, String type, String modIdStr) {
         String modId = modIdStr;
-        if (modId == null || modId.equals(""))
+        if (modId == null || modId.isEmpty())
             modId = SpartanNetherite.MOD_ID;
-        if (type == null || type.equals(""))
+        if (type == null || type.isEmpty())
             return new TextComponentTranslation(modId.toLowerCase() + ":" + unlocalizedStr).getFormattedText();
         return new TextComponentTranslation(String.format("%s.%s:%s", type, modId.toLowerCase(), unlocalizedStr)).getFormattedText();
     }
@@ -35,9 +35,9 @@ public class StringHelper {
 
     public static String translateFormattedString(String unlocalizedStr, String type, String modIdStr, Object... parameters) {
         String modId = modIdStr;
-        if (modId == null || modId.equals(""))
+        if (modId == null || modId.isEmpty())
             modId = SpartanNetherite.MOD_ID;
-        if (type == null || type.equals(""))
+        if (type == null || type.isEmpty())
             return new TextComponentTranslation(String.format(modId.toLowerCase() + ":" + unlocalizedStr, parameters)).getFormattedText();
         return new TextComponentTranslation(String.format(String.format("%s.%s:%s", type, modId.toLowerCase(), unlocalizedStr), parameters)).getFormattedText();
     }

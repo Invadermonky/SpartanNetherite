@@ -13,8 +13,7 @@ public enum ModIds {
     jei(ConstIds.jei),
     nether_backport(ConstIds.nether_backport),
     spartan_shields(ConstIds.spartan_shields),
-    spartan_weaponry(ConstIds.spartan_weaponry, ConstVersions.spartan_weaponry, true, false)
-    ;
+    spartan_weaponry(ConstIds.spartan_weaponry, ConstVersions.spartan_weaponry, true, false);
 
     public final String modId;
     public final boolean isLoaded;
